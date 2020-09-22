@@ -12,6 +12,40 @@
         var numOn = confirm("Number");
 
       
+        do {
+            var pw = [];
+            var pwType = Math.floor(Math.random() * 4);
+            if (pwType === 0) {
+              if (charsOn === true) {
+                //get special character;
+              } else {
+                pwType = 1;
+              }
+            } else if (pwType === 1) {
+              if (capsOn === true) {
+                //get capital letter
+              } else {
+                pwType = 2; 
+              }
+            } else if (pwType === 2) {
+              if (capsOff === true) {
+                //get lowercase letter
+              } else {
+                pwType = 3;
+              }
+            } else if (pwType === 3) {
+              if (numOn === true) {
+                //get number
+              } else {
+                pwType = 0;
+              }
+            } else {
+              pwType = 0;
+            }
+            }
+        }
+
+
 //         Do {
 // 	Pw = [];
 // 	Var pwType = Math.floor(Math.random() * 4);
