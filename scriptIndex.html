@@ -6,12 +6,17 @@
   </head>
   <body>
     <script type="text/javascript">
+
+        //Confirms to hear whether the user wants special characters, capital letters, lowercase letters, and/or numbers in their pw
         var charsOn = confirm("Special characters");
         var capsOn = confirm("Capital letters");
         var capsOff = confirm("Lowercase letters");
         var numOn = confirm("Number");
 
-      
+        //Prompts user to input a value for how long they want their password to be
+        var inputLength = prompt("How long is your password (min. 8)");
+
+        //This do/while statement gets the individual elements of the password and pushes them to the pw variable
         do {
             var pw = [];
             var pwType = Math.floor(Math.random() * 4);
@@ -43,7 +48,7 @@
               pwType = 0;
             }
             }
-        }
+        } while (pw.length < inputLength);
 
 
 //         Do {
