@@ -22,7 +22,8 @@
         //This do/while loop gets the individual elements of the password and pushes them to the pw variable
         do {
 
-           
+            //Turns inputLength from a string into an integer
+            parseInt(inputLength);
           
             //Here's the randomizer to figure out which type of password character will be produced in each iteration
             var pwType = Math.floor(Math.random() * 4);
@@ -99,14 +100,20 @@
             } else {
               pwType = 0;
             }
-        alert(pw);
-        console.log(pw);
+        
         //As long as the pw array is shorter than the input length the user put in and longer than 8 characters, the loop continues
-        } while (pw.length > 8 && pw.length < inputLength);
+        } while (pw.length < inputLength);
 
-alert(pw);
+//To test the new array
+console.log(pw);
 
-//Brian's pseudocode
+//To send the generated password to the user
+alert(pw.join(""));
+
+
+
+
+//My original pseudocode
 //         Do {
 // 	Pw = [];
 // 	Var pwType = Math.floor(Math.random() * 4);
