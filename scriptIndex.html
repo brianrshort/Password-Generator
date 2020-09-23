@@ -16,11 +16,13 @@
         //Prompts user to input a value for how long they want their password to be
         var inputLength = prompt("How long is your password (min. 8)");
 
+       //Here's the password array to be returned to the user
+       var pw = [];
+
         //This do/while loop gets the individual elements of the password and pushes them to the pw variable
         do {
 
-            //Here's the password array to be returned to the user
-            var pw = [];
+           
           
             //Here's the randomizer to figure out which type of password character will be produced in each iteration
             var pwType = Math.floor(Math.random() * 4);
@@ -32,9 +34,10 @@
               if (charsOn === true) {
           
                 //get special character;
-
+                var specChar = "!@#$%^&*()_+"
+                specEl = specChar[Math.floor(Math.random() * specChar.length)]
                 //Push the special character to the main password array
-                specEl = pw.push();
+                pw.push(specEl);
           
               //Otherwise, if the user didn't choose special characters, we have to check the next pwType
               } else {
@@ -48,9 +51,10 @@
               if (capsOn === true) {
           
                 //get capital letter
+                var capEl = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 
                 //Push the special character to the main password array
-                capEl = pw.push();
+                pw.push(capEl);
           
               //Otherwise, if the user didn't choose capital letters, we have to check the next pwType
               } else {
@@ -64,9 +68,10 @@
               if (capsOff === true) {
           
                 //Get lowercase letter
+                var lowerEl = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 
                 //Push the lowercase letter to the main password array 
-                lowerEl = pw.push();
+                pw.push(lowerEl);
           
               //Otherwise, if the user didn't choose lowercase letters, we have to check the next pwType
               } else {
@@ -80,9 +85,10 @@
               if (numOn === true) {
           
                 //get number
+                var numEl = String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 
                 //Push the number to the main password array
-                numEl = pw.push();
+                pw.push(numEl);
           
               //Otherwise, if hte user didn't choose lowercase letters, we have to check the next pwType
               } else {
@@ -93,10 +99,12 @@
             } else {
               pwType = 0;
             }
-        
+        alert(pw);
+        console.log(pw);
         //As long as the pw array is shorter than the input length the user put in and longer than 8 characters, the loop continues
         } while (pw.length > 8 && pw.length < inputLength);
 
+alert(pw);
 
 //Brian's pseudocode
 //         Do {
