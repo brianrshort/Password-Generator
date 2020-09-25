@@ -1,4 +1,8 @@
-#passwordStyle {
-    color: white;
-    font-size: x-large;
+h1 {
+	margin: 50px auto;
+	text-align: center;
+	text-shadow: -10px -10px 0px rgba(255,255,255,0.3), 10px 10px 0px rgba(0,0,0,0.8);
+	color: #333;
+	opacity: 0.4;
+	font: 700 80px 'Bitter';
 }

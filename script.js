@@ -102,8 +102,6 @@ document.getElementById("genPW").addEventListener ("click", function() {
     alert(pw.join(""));
 
     //To post the password to the page and replace it when a new one is generated
-    document.getElementById("PWplacement").style.color = "white";
-    document.getElementById("PWplacement").style.fontSize = "50px";
     document.getElementById("PWplacement").textContent = pw.join("");
 
 });
