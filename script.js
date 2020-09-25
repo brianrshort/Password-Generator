@@ -7,8 +7,17 @@ document.getElementById("genPW").addEventListener ("click", function() {
     var capsOff = confirm("Lowercase letters");
     var numOn = confirm("Number");
 
+    if (charsOn === false && capsOn === false && capsOff === false && numOn === false) {
+      alert("No characters selected");
+      document.getElementById("PWplacement").textContent = "N1c3Tr^L0s3r";
+    } else {
+
     //Prompts user to input a value for how long they want their password to be
     var inputLength = prompt("How long is your password (min. 8)");
+    if (inputLength < 8) {
+      alert("Minimum 8 characters");
+      document.getElementById("PWplacement").textContent = "N1c3Tr^L0s3r";
+    } else {
 
     //Here's the password array to be returned to the user
     var pw = [];
@@ -103,8 +112,10 @@ document.getElementById("genPW").addEventListener ("click", function() {
 
     //To post the password to the page and replace it when a new one is generated
     document.getElementById("PWplacement").textContent = pw.join("");
-
-});
+  }
+}
+}
+);
 
 
 
