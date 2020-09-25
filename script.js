@@ -1,4 +1,5 @@
-
+//Add event listener to listen for user clicking on the "generate password" button
+document.getElementById("genPW").addEventListener ("click", function() {
 
     //Confirms to hear whether the user wants special characters, capital letters, lowercase letters, and/or numbers in their pw
     var charsOn = confirm("Special characters");
@@ -9,8 +10,8 @@
     //Prompts user to input a value for how long they want their password to be
     var inputLength = prompt("How long is your password (min. 8)");
 
-   //Here's the password array to be returned to the user
-   var pw = [];
+    //Here's the password array to be returned to the user
+    var pw = [];
 
     //This do/while loop gets the individual elements of the password and pushes them to the pw variable
     do {
@@ -97,11 +98,15 @@
     //As long as the pw array is shorter than the input length the user put in and longer than 8 characters, the loop continues
     } while (pw.length < inputLength);
 
-//To test the new array
-console.log(pw);
+    //To send the generated password to the user
+    alert(pw.join(""));
 
-//To send the generated password to the user
-alert(pw.join(""));
+    //To post the password to the page and replace it when a new one is generated
+    document.getElementById("PWplacement").style.color = "white";
+    document.getElementById("PWplacement").style.fontSize = "50px";
+    document.getElementById("PWplacement").textContent = pw.join("");
+
+});
 
 
 
