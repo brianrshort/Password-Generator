@@ -14,6 +14,10 @@ This project was completed as part of the fall 2020 MSU/Trilogy 6-month bootcamp
 
 I’ve also included a version (halloweenGeocitiesPasswordGenerator.html) gwith a different appearance to liven things up. (It’s almost October.) The html file name gives some hints as to the visual theme. 
 
+![Javascript badge](https://img.shields.io/badge/Javascript-60%25-red)
+![HTML badge](https://img.shields.io/badge/HTML-30%25-green)
+![CSS badge](https://img.shields.io/badge/CSS-10%25-blue)
+
 ### Original Assignment
 
 03 JavaScript: Password Generator
