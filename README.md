@@ -12,7 +12,9 @@ This project practiced event listeners, function expressions, do/while loops, if
 
 This project was completed as part of the fall 2020 MSU/Trilogy 6-month bootcamp, so I’ve included an anodyne display (index.html) for grading purposes. 
 
-I’ve also included a version (halloweenGeocitiesPasswordGenerator.html) gwith a different appearance to liven things up. (It’s almost October.) The html file name gives some hints as to the visual theme. 
+I’ve also included a version (halloweenGeocitiesPasswordGenerator.html) with a different appearance to liven things up. (It’s almost October.) The html file name gives some hints as to the visual theme. 
+
+Link -- https://brianrshort.github.io/Password-Generator/index.html
 
 ![Javascript badge](https://img.shields.io/badge/Javascript-60%25-red)
 ![HTML badge](https://img.shields.io/badge/HTML-30%25-green)
