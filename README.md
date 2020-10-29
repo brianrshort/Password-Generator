@@ -20,6 +20,8 @@ Link -- https://brianrshort.github.io/Password-Generator/index.html
 ![HTML badge](https://img.shields.io/badge/HTML-30%25-green)
 ![CSS badge](https://img.shields.io/badge/CSS-10%25-blue)
 
+License: MIT
+
 ### Original Assignment
 
 03 JavaScript: Password Generator
